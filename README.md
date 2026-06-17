@@ -20,7 +20,7 @@ npm run build
 
 ## GitHub Pages
 
-Repozitář je připravený pro automatické nasazení přes GitHub Actions. Po nahrání všech zdrojových souborů otevřete **Settings → Pages** a jako zdroj vyberte **GitHub Actions**.
+Repozitář obsahuje workflow `.github/workflows/deploy-pages.yml`. V nastavení repozitáře otevřete **Settings → Pages** a jako zdroj vyberte **GitHub Actions**. Po pushi do větve `main` se aplikace automaticky sestaví a nasadí.
 
 ## Technologie
 

@@ -1,0 +1,1321 @@
+1. Role a hlavní zadání
+
+Vystupuj jako seniorní produktový designér, UX architekt, business analytik pojišťovnictví, specialista na likvidaci pojistných událostí, enterprise softwarový architekt a frontend vývojář.
+
+Navrhni a vytvoř kompletní, profesionální a plně responzivní webovou aplikaci pro společnost Kooperativa pojišťovna, a.s., Vienna Insurance Group. Aplikace bude představovat moderní interní systém pro správu a likvidaci pojistných událostí.
+
+Pracovní název aplikace bude:
+
+KLIK
+Kooperativní likvidační informační komplex
+
+Alternativní textový název zobrazovaný v rozhraní může být Likvidace 360. Nepřidávej tento název přímo do oficiálního loga Kooperativy a logo žádným způsobem neupravuj.
+
+Cílem aplikace je sjednotit celý proces od prvního oznámení škody až po konečné uzavření případu. Systém musí podporovat registraci pojistné události, kontrolu pojistného krytí, shromažďování dokumentů, posouzení škody, komunikaci s klientem a dalšími účastníky, tvorbu rezerv, výpočet pojistného plnění, schvalování plateb, odhalování podezřelých případů, regresní řízení, práci externích partnerů, reporting i auditní kontrolu.
+
+Nevytvářej pouze marketingový web ani jednoduchý dashboard. Vytvoř realistický enterprise systém, který působí jako aplikace používaná každý den stovkami likvidátorů, vedoucích pracovníků, techniků, lékařských posuzovatelů, právníků, pracovníků finančního oddělení a externích partnerů.
+
+Aplikace musí být:
+
+vizuálně konzistentní s Kooperativou,
+rychlá a přehledná,
+vhodná pro práci s velkým množstvím případů,
+bezpečná,
+auditovatelná,
+modulární,
+přístupná,
+připravená na napojení na další systémy,
+založená na realistických procesech likvidace pojistných událostí,
+kompletně v českém jazyce.
+
+Veškerá data v prototypu musí být smyšlená a syntetická. Nepoužívej skutečná rodná čísla, adresy, zdravotní informace, bankovní účty ani skutečná data klientů.
+
+2. Vizuální identita Kooperativy
+
+Použij přiložený dokument Náš vizuální styl jako hlavní zdroj pro podobu aplikace. Z dokumentu analyzuj pravidla loga, barev, typografie, sazby, ikon, fotografií a stavby layoutu.
+
+Logo
+
+Používej pouze oficiální logo získané z přiložených podkladů. Logo nepřekresluj, negeneruj pomocí AI, neměň jeho proporce, barvy, text, claim ani uspořádání jednotlivých částí.
+
+Primární plnobarevné logo umísťuj na bílý podklad. Zachovej kolem loga dostatečnou ochrannou zónu. Doporučená minimální šířka loga v digitálním prostředí je přibližně 100 pixelů. V hlavní desktopové hlavičce použij logo o šířce přibližně 125–150 pixelů.
+
+Samostatnou triquetru nepoužívej jako náhradu loga, pokud to není výslovně povoleno přiloženým manuálem. Může být použita pouze velmi jemně jako doprovodný grafický prvek, například v prázdném stavu, při načítání nebo na přihlašovací obrazovce. Nikdy nesmí působit jako nové nebo pozměněné logo.
+
+Barvy
+
+Vytvoř centrální design tokeny:
+
+--koop-green: #00843D
+--koop-green-dark: #00573F
+--koop-green-light: #86D295
+--koop-yellow: #FFCD00
+--koop-orange: #F68D2E
+--koop-cyan: #4EC3E0
+--koop-purple: #A05EB5
+--koop-red: #E2000F
+--koop-coral: #E04E39
+--koop-gray: #999999
+--koop-black: #000000
+--koop-white: #FFFFFF
+--surface-background: #F5F6F4
+--surface-muted: #EEF1EE
+--border-neutral: #D8DDD9
+--text-primary: #1D2520
+--text-secondary: #56615A
+
+Primární zelená musí být hlavní barvou aplikace. Použij ji na hlavní tlačítka, aktivní navigaci, nadpisy, odkazy, zvýraznění vybraných položek a důležité prvky.
+
+Produktové barvy používej pouze jako doplňkové rozlišení:
+
+životní a úrazové pojištění: světle zelená,
+podnikatelská a průmyslová pojištění: šedá,
+cestovní pojištění: žlutá,
+pojištění vozidel: oranžová,
+pojištění majetku občanů: světle modrá,
+odpovědnost a další skupiny: použij doplňkovou červenou, fialovou nebo tmavě zelenou podle konzistentního systému.
+
+Produktové barvy používej na tenký horní okraj karty, ikonku produktu, štítek nebo malý postranní pruh. Nevytvářej celé velké obrazovky v oranžové, žluté nebo modré.
+
+Barva nikdy nesmí být jediným způsobem předání informace. Každý stav doplň textem a ikonou.
+
+Typografie
+
+Pokud je skutečný font Koop Pro, Koop Cond Pro nebo Koop Office přiložen jako licencovaný asset, použij jej. Jestliže font není k dispozici, použij Arial, protože je v manuálu uveden jako systémová alternativa.
+
+Nepokoušej se stahovat nebo napodobovat proprietární font z neověřeného zdroje.
+
+Použij:
+
+výrazný tučný řez pro hlavní nadpisy,
+Regular pro běžné texty,
+Light nebo Regular pro delší informační text,
+Condensed pouze v tabulkách nebo místech s omezeným prostorem,
+levé zarovnání veškerého hlavního obsahu,
+jasnou hierarchii nadpisů,
+žádné umělé roztahování písmen,
+žádné dekorativní fonty.
+Styl komponent
+
+Design má působit odborně, lidsky a důvěryhodně. Značka má archetyp mentora: systém pracovníka vede, poskytuje kontext, upozorňuje na rizika a pomáhá mu učinit správné rozhodnutí.
+
+Používej:
+
+bílé plochy,
+dostatek volného prostoru,
+jemné šedé pozadí aplikace,
+subtilní okraje,
+minimální stíny,
+poloměr rohů přibližně 6–8 pixelů,
+jednoduché lineární ikony,
+přehledné tabulky,
+výrazné, ale ne agresivní nadpisy,
+krátké a srozumitelné texty,
+konzistentní mezery založené na násobcích 4 nebo 8 pixelů.
+
+Nepoužívej glassmorphism, neonové efekty, výrazné gradienty, 3D ikony, přehnaně kulaté karty, futuristické animace ani vzhled běžné startupové aplikace.
+
+3. Cíloví uživatelé a přístupová práva
+
+Vytvoř přihlašování přes firemní single sign-on. V prototypu zobraz demo přihlášení s možností vybrat uživatelskou roli.
+
+Podporuj minimálně následující role:
+
+Operátor prvního kontaktu
+Registruje nové škody přijaté telefonicky, na pobočce, e-mailem nebo z jiného kanálu.
+Likvidátor
+Zpracovává přidělené případy, komunikuje s klientem, kontroluje dokumenty, rozhoduje o krytí a připravuje plnění.
+Seniorní likvidátor
+Řeší složitější nebo finančně významnější případy a schvaluje rozhodnutí juniorních pracovníků.
+Vedoucí týmu
+Sleduje pracovní fronty, přiděluje případy, kontroluje SLA, kapacitu a kvalitu.
+Technik nebo mobilní technik
+Provádí prohlídky vozidel a majetku, pořizuje fotografie, měření, protokoly a kalkulace.
+Lékařský posuzovatel
+Má omezený přístup k potřebné zdravotní dokumentaci a posuzuje zdravotní nároky.
+Specialista vyšetřování a prevence podvodů
+Pracuje s podezřelými případy, vazbami mezi osobami, dokumenty a událostmi.
+Právník
+Řeší sporné nároky, soudní řízení, regresy, odpovědnost a právní stanoviska.
+Finanční pracovník
+Kontroluje a realizuje platby, vratky a finanční párování.
+Schvalovatel plateb
+Schvaluje platby nad stanovený limit. Nemůže být zároveň osobou, která platbu vytvořila.
+Pracovník klientského centra
+Vidí stav případu, klientskou komunikaci a může doplnit podklady, ale nemůže měnit odborné rozhodnutí.
+Externí partner
+Vidí pouze případy a dokumenty, které mu byly přiděleny.
+Auditor nebo compliance pracovník
+Má přístup ke kompletní historii, ale standardně bez možnosti měnit data.
+Administrátor systému
+Spravuje konfiguraci, nikoliv automaticky obsah všech zdravotních a citlivých dokumentů.
+
+Zaveď princip nejnižších nutných oprávnění, oddělení neslučitelných rolí, časově omezené delegování, zastupování během nepřítomnosti a režim „break glass“ pro mimořádný přístup. Každý mimořádný přístup musí vyžadovat uvedení důvodu a vytvořit auditní záznam.
+
+4. Hlavní navigace aplikace
+
+Na desktopu vytvoř levý navigační panel a horní aplikační lištu.
+
+Navigace bude obsahovat:
+
+Přehled
+Moje případy
+Všechny případy
+Nová pojistná událost
+Úkoly
+Dokumenty
+Prohlídky a posudky
+Platby
+Regresy a vymáhání
+Podezřelé případy
+Katastrofické události
+Partneři
+Komunikace
+Reporty
+Kontrola kvality
+Administrace
+
+V horní liště zobraz:
+
+globální vyhledávání,
+rychlé vytvoření nové škody,
+ikonu úkolů,
+upozornění,
+nápovědu,
+profil uživatele,
+aktuální roli,
+možnost zastupování jiného pracovníka,
+označení testovacího prostředí.
+
+Globální vyhledávání musí umožnit hledání podle:
+
+čísla pojistné události,
+čísla pojistné smlouvy,
+jména klienta,
+obchodního jména a IČO,
+SPZ,
+VIN,
+adresy škody,
+telefonního čísla,
+e-mailu,
+čísla faktury,
+čísla platby,
+názvu dokumentu.
+
+Citlivé výsledky zobrazuj podle oprávnění uživatele.
+
+5. Přihlašovací obrazovka
+
+Vytvoř elegantní přihlašovací stránku s výraznou zelenou plochou, bílým panelem pro přihlášení a oficiálním logem Kooperativy.
+
+Text:
+
+Vítejte v systému KLIK
+„Vše potřebné pro rychlé, správné a lidské vyřešení pojistné události.“
+
+Tlačítko:
+
+Přihlásit přes firemní účet
+
+Pro demo přidej rozbalovací nabídku „Zvolit ukázkovou roli“. Přidej malé upozornění, že jde o demonstrační prostředí se syntetickými daty.
+
+6. Hlavní dashboard
+
+Dashboard přizpůsob podle role přihlášeného uživatele.
+
+Pro likvidátora zobraz:
+
+počet nových případů,
+případy vyžadující dnešní reakci,
+případy s chybějícími dokumenty,
+případy blížící se zákonné nebo interní lhůtě,
+případy čekající na posudek,
+případy připravené k rozhodnutí,
+platby čekající na schválení,
+vrácené případy z kontroly kvality,
+podezřelé případy,
+přehled osobní pracovní fronty.
+
+Přidej část Dnešní priority se seznamem konkrétních úkolů. Každý úkol musí obsahovat termín, prioritu, typ, číslo události a jednoznačnou další akci.
+
+Přidej grafy:
+
+nové a uzavřené škody za posledních 30 dní,
+průměrná doba vyřízení,
+rozdělení případů podle produktu,
+případy podle stavu,
+celková rezerva a vyplacené plnění,
+procento případů vyřešených bez manuálního zásahu,
+vytížení týmu.
+
+Pro vedoucího zobraz fronty jednotlivých pracovníků, nevyřízené úkoly, nemocnost nebo nepřítomnost, překročené limity a doporučení k přerozdělení případů.
+
+Vytvoř funkční filtrování podle období, produktu, týmu, regionu, závažnosti a typu škody.
+
+7. Seznam pojistných událostí
+
+Vytvoř vysoce funkční datovou tabulku.
+
+Sloupce:
+
+číslo pojistné události,
+stav,
+priorita,
+produkt,
+klient nebo poškozený,
+datum vzniku škody,
+datum oznámení,
+stručný popis,
+odhad škody,
+aktuální rezerva,
+vyplaceno,
+vlastník případu,
+další úkol,
+termín,
+počet chybějících dokumentů,
+fraud skóre,
+poslední aktivita.
+
+Podporuj:
+
+řazení,
+fulltextové hledání,
+pokročilé filtrování,
+seskupování,
+výběr sloupců,
+změnu šířky sloupců,
+uložené pohledy,
+export,
+hromadné přiřazení,
+hromadnou změnu priority,
+hromadné vytvoření úkolu,
+připnutí případů,
+zobrazení detailu v postranním panelu.
+
+Připrav uložené pohledy:
+
+Moje nové případy
+Dnes k vyřízení
+Čeká se na klienta
+Čeká se na partnera
+Překročené SLA
+Připraveno k platbě
+Podezřelé případy
+Katastrofické škody
+Případy bez aktivity déle než sedm dní
+8. Průvodce nahlášením nové škody
+
+Vytvoř vícekrokový formulář s průběžným ukládáním. Uživatel musí mít možnost uložit koncept a později pokračovat.
+
+Kroky:
+
+1. Kanál oznámení
+online formulář,
+klientská zóna,
+telefon,
+pobočka,
+e-mail,
+mobilní aplikace,
+externí partner,
+API,
+datová schránka,
+import dokumentu.
+2. Vyhledání pojistné smlouvy
+
+Vyhledání podle čísla smlouvy, klienta, rodného čísla v maskované podobě, IČO, SPZ, VIN, adresy nebo kontaktního údaje.
+
+Zobraz smlouvy platné k datu vzniku škody. Upozorni na smlouvy, které byly ukončené, změněné, nezaplacené nebo začaly platit krátce před událostí. Toto upozornění nesmí automaticky znamenat zamítnutí.
+
+3. Typ události
+
+Uživatel vybere produkt a konkrétní typ:
+
+vozidlo,
+majetek,
+odpovědnost,
+životní a úrazové pojištění,
+cestovní pojištění,
+zákonné pojištění zaměstnavatele,
+podnikatelské pojištění,
+průmyslové pojištění,
+právní ochrana,
+jiný typ.
+4. Základní okolnosti
+datum a čas,
+místo,
+příčina,
+popis události,
+okolnosti,
+počasí,
+přítomnost policie, hasičů nebo záchranné služby,
+číslo protokolu,
+možnost propojit škodu s katastrofickou událostí,
+informace, zda škoda stále pokračuje,
+nutnost okamžité asistence.
+5. Účastníci
+pojistník,
+pojištěný,
+poškozený,
+oznamovatel,
+řidič,
+vlastník věci,
+svědek,
+oprávněná osoba,
+zákonný zástupce,
+zmocněnec,
+zaměstnavatel,
+zaměstnanec,
+protistrana.
+
+U každé osoby eviduj roli, kontaktní informace, preferovaný způsob komunikace a případné zastoupení.
+
+6. Rozsah škody
+
+Zobraz dynamický formulář podle produktu. Uživatel může vytvořit více poškozených objektů nebo více nároků v jedné události.
+
+7. Dokumenty
+
+Zobraz automaticky vytvořený checklist. Podporuj přetažení souborů, fotografie z mobilu, PDF, videa, e-mailové přílohy a naskenované dokumenty.
+
+8. Bankovní a platební údaje
+
+Zadej příjemce, měnu, účet a případné rozdělení plnění mezi více osob.
+
+9. Rekapitulace
+
+Zobraz přehled, chybějící povinné údaje, možné duplicity a souhlasy.
+
+Po odeslání vytvoř unikátní číslo události, potvrzení, počáteční úkoly, vlastníka a klientskou zprávu.
+
+9. Detail pojistné události
+
+Detail případu je nejdůležitější obrazovka aplikace.
+
+V horní části zobraz stálý souhrnný panel:
+
+číslo události,
+produkt,
+aktuální stav,
+prioritu,
+vlastníka,
+klienta,
+datum škody,
+datum oznámení,
+odhad škody,
+rezervu,
+vyplacené plnění,
+nejbližší termín,
+počet chybějících dokumentů,
+indikátor rizika,
+tlačítko „Další doporučený krok“.
+
+Přidej záložky:
+
+Souhrn
+Smlouva a krytí
+Účastníci
+Poškozené objekty a nároky
+Dokumenty
+Prohlídky a posudky
+Úkoly
+Komunikace
+Finance
+Regresy
+Podezření a vyšetřování
+Právní agenda
+Historie a audit
+Souhrn
+
+Zobraz:
+
+stručné shrnutí případu,
+časovou osu,
+důležité okolnosti,
+aktuální blokátory,
+doporučený další postup,
+kontrolní seznam,
+interní poznámky,
+důležité kontakty,
+poslední komunikaci,
+nejnovější dokumenty,
+historii změn stavu.
+
+Umožni vytvářet poznámky jako:
+
+soukromá poznámka,
+týmová poznámka,
+poznámka pro partnera,
+text určený klientovi.
+
+Interní poznámky se nikdy nesmí zobrazit klientovi.
+
+10. Kontrola smlouvy a pojistného krytí
+
+Zobraz neměnný snapshot smlouvy platný ke dni škody:
+
+číslo smlouvy,
+produkt a verze produktu,
+platnost,
+pojistník,
+pojištěné osoby nebo objekty,
+sjednaná rizika,
+limity,
+sublimity,
+spoluúčast,
+výluky,
+dodatky,
+historie změn,
+stav placení,
+oprávněné osoby,
+vinkulace,
+soupojištění,
+zajištění.
+
+Vytvoř pracovní část Posouzení krytí:
+
+kryto,
+částečně kryto,
+nekryto,
+čeká na doplnění,
+vyžaduje právní posouzení.
+
+Každé rozhodnutí musí obsahovat:
+
+zdůvodnění,
+použitou smluvní podmínku,
+odkaz na dokument nebo důkaz,
+autora,
+datum,
+schvalovatele,
+historii změn.
+
+Systém může navrhnout rozhodnutí, ale nesmí automaticky zamítnout pojistný nárok bez potvrzení oprávněného pracovníka.
+
+11. Produktově specifické procesy
+Pojištění vozidel
+
+Eviduj:
+
+SPZ,
+VIN,
+značku,
+model,
+rok výroby,
+stav tachometru,
+vlastníka,
+řidiče,
+havarijní pojištění nebo povinné ručení,
+další účastníky nehody,
+záznam o dopravní nehodě,
+policii,
+rozsah poškození,
+poškozené části vozidla,
+fotografie,
+odtah,
+náhradní vozidlo,
+smluvní servis,
+kalkulaci opravy,
+hodinovou sazbu,
+náhradní díly,
+lakování,
+amortizaci,
+obvyklou cenu vozidla,
+totální škodu,
+hodnotu zbytků,
+dobu opravy,
+újmu na zdraví,
+škodu na převáženém majetku.
+
+Vytvoř vizuální diagram vozidla, do kterého lze označit poškozené části. Podporuj objednání prohlídky, výběr smluvního servisu a schválení kalkulace.
+
+Pojištění majetku
+
+Eviduj:
+
+adresu,
+typ nemovitosti,
+vlastníka,
+pojištěné stavby a domácnost,
+místnosti,
+stavební součásti,
+poškozené nebo odcizené věci,
+stáří,
+pořizovací cenu,
+současnou hodnotu,
+rozměry,
+materiál,
+počet kusů,
+fotodokumentaci,
+faktury,
+nabídky dodavatelů,
+způsob výpočtu plnění,
+rozpočet nebo úhradu podle dokladů,
+podpojištění,
+zachraňovací náklady,
+náhradní ubytování,
+sanační firmu,
+odpovědnou osobu.
+
+Umožni rychle vytvořit položkový seznam poškozených věcí importem z tabulky.
+
+Pojištění odpovědnosti
+
+Eviduj:
+
+pojištěného škůdce,
+poškozeného,
+písemně uplatněný nárok,
+popis jednání,
+příčinnou souvislost,
+právní odpovědnost,
+spoluzavinění,
+svědky,
+policejní nebo jiný protokol,
+škodu na majetku,
+újmu na zdraví,
+ušlý výdělek,
+náklady na léčení,
+bolestné,
+ztížení společenského uplatnění,
+náklady právního zastoupení,
+dlouhodobou rentu.
+Životní a úrazové pojištění
+
+Eviduj:
+
+pojištěnou osobu,
+typ nároku,
+diagnózu,
+datum úrazu nebo počátku nemoci,
+první ošetření,
+průběh léčení,
+pracovní neschopnost,
+hospitalizaci,
+operaci,
+trvalé následky,
+invaliditu,
+závažné onemocnění,
+úmrtí,
+oprávněnou osobu,
+lékařské zprávy,
+posudek lékaře,
+případnou lékařskou prohlídku.
+
+Zdravotní data zobraz pouze uživatelům, kteří je nezbytně potřebují.
+
+Cestovní pojištění
+
+Eviduj:
+
+zemi,
+termín cesty,
+typ události,
+asistenční případ,
+léčebné výlohy,
+hospitalizaci,
+přímou úhradu poskytovateli,
+repatriaci,
+zavazadla,
+krádež,
+storno cesty,
+zpoždění,
+odpovědnost,
+měnu,
+kurz použitý pro přepočet,
+zahraniční dokumenty,
+překlad,
+poskytovatele zdravotní péče.
+Zákonné pojištění zaměstnavatele
+
+Eviduj:
+
+zaměstnavatele,
+zaměstnance,
+pracovní pozici,
+pracovní úraz nebo nemoc z povolání,
+datum a místo,
+popis pracovního děje,
+záznam o pracovním úrazu,
+pracovní neschopnost,
+průměrný výdělek,
+ztrátu na výdělku,
+bolestné,
+ztížení společenského uplatnění,
+náklady léčení,
+věcnou škodu,
+rentu,
+nároky pozůstalých,
+plnění vyplacené zaměstnavatelem,
+refundaci zaměstnavateli.
+Podnikatelské a průmyslové škody
+
+Podporuj složité případy s více místy, více smlouvami, soupojištěním, přerušením provozu, stroji, zásobami, odpovědností, ekologickou škodou, externími znalci, zálohami, zajištěním a víceúrovňovým schvalováním.
+
+12. Dokumenty a důkazy
+
+Vytvoř robustní dokumentové centrum.
+
+Každý dokument musí mít:
+
+typ,
+název,
+popis,
+zdroj,
+datum přijetí,
+autora,
+vztah ke konkrétnímu nároku,
+verzi,
+stav kontroly,
+citlivost,
+příznak, zda je viditelný klientovi,
+historii změn.
+
+Podporuj:
+
+drag and drop,
+hromadné nahrávání,
+fotografie z telefonu,
+náhled PDF a obrázků,
+otočení a ořez,
+anotace poškození,
+OCR,
+automatickou klasifikaci,
+extrakci částek a dat,
+porovnání verzí,
+kontrolu duplicit,
+antivirovou kontrolu,
+kontrolu podezřelých úprav,
+začernění osobních údajů,
+elektronický podpis,
+právní blokaci mazání,
+retenční pravidla.
+
+Vytvoř automatický checklist dokumentů podle typu škody. U každé chybějící položky musí být tlačítko Vyžádat od klienta.
+
+Nezobrazuj AI extrahované údaje jako definitivní. Uživatel je musí potvrdit a systém musí uchovat původní dokument.
+
+13. Úkoly, workflow a lhůty
+
+Vytvoř konfigurovatelný workflow engine.
+
+Základní stavy případu:
+
+Koncept
+Přijato
+Registrováno
+Počáteční kontrola
+Čeká na dokumenty
+Posouzení krytí
+Probíhá prohlídka
+Probíhá odborné posouzení
+Vyšetřování
+Připraveno k rozhodnutí
+Čeká na schválení
+Připraveno k platbě
+Zaplaceno
+Zamítnuto
+Částečně vyřízeno
+Pozastaveno
+Soudní řízení
+Regres
+Uzavřeno
+Znovu otevřeno
+
+Každý přechod mezi stavy musí mít definované podmínky, oprávnění a auditní stopu.
+
+Systém musí sledovat interní SLA i zákonné lhůty. Vytvoř výrazný compliance časovač. Pokud se blíží konec lhůty, systém upozorní likvidátora a vedoucího. Pokud není možné šetření dokončit, musí aplikace umožnit vytvořit odůvodněnou zprávu oznamovateli a zaznamenat důvod prodloužení.
+
+Přidej žádosti o zpřístupnění nebo kopii likvidačního spisu po ukončení šetření. Vygenerovaný spis musí automaticky oddělit interní chráněné informace, údaje jiných osob a dokumenty, jejichž poskytnutí není dovoleno. Česká národní banka uvádí, že oprávněná osoba může po ukončení šetření požádat o nahlédnutí do spisu; zároveň upozorňuje na tříměsíční dobu šetření a povinnost sdělit důvody, pokud šetření nelze v této době dokončit.
+
+Automatické přidělení případu prováděj podle:
+
+produktu,
+typu škody,
+regionu,
+finanční závažnosti,
+složitosti,
+specializace pracovníka,
+aktuální kapacity,
+jazyka,
+rizikového skóre,
+katastrofické události.
+14. Finance, rezervy a platby
+
+Vytvoř finanční modul se samostatnými právy.
+
+Podporuj:
+
+počáteční automaticky navrženou rezervu,
+manuální změnu rezervy,
+rezervy podle jednotlivých nároků a krytí,
+historii rezerv,
+schvalování výrazných změn,
+vyplacené plnění,
+nevyplacenou rezervu,
+celkový vzniklý náklad,
+spoluúčast,
+limity,
+zálohové plnění,
+částečné platby,
+opakované platby,
+dlouhodobé renty,
+více příjemců,
+více měn,
+kurzové přepočty,
+vratky,
+přeplatky,
+zamítnuté platby,
+finanční párování.
+
+Každý návrh platby musí obsahovat:
+
+příjemce,
+účet,
+částku,
+měnu,
+právní titul,
+krytí,
+výpočet,
+spoluúčast,
+limity,
+dokumenty,
+autora,
+schvalovatele.
+
+Pro platby nad konfigurovatelný limit vyžaduj pravidlo čtyř očí. Osoba, která platbu vytvořila, ji nesmí sama finálně schválit.
+
+Vygeneruj srozumitelné vysvětlení výpočtu plnění pro klienta.
+
+15. Regresy, vymáhání a zajištění
+
+Vytvoř modul pro:
+
+regres vůči odpovědné osobě,
+subrogaci,
+vymáhání spoluúčasti,
+přeplatky,
+nároky vůči jiné pojišťovně,
+škody se zahraničním prvkem,
+prodej zbytků,
+salvage,
+soupojištění,
+zajištění,
+inkaso pohledávky,
+splátkové kalendáře,
+předání právníkovi nebo inkasní agentuře.
+
+Zobraz očekávanou a skutečně získanou částku, termíny, promlčení a navazující úkoly.
+
+16. Prevence podvodů
+
+Vytvoř samostatný modul pro detekci a vyšetřování podezřelých případů.
+
+Rizikové indikátory mohou zahrnovat:
+
+opakované škody stejných osob,
+vazby mezi účastníky různých škod,
+upravené nebo duplicitní dokumenty,
+nesoulad metadat fotografie,
+nápadně krátkou dobu od sjednání pojištění,
+nesoulad popisu a poškození,
+neobvyklou výši faktury,
+opakující se servis, lékaře, účet nebo telefon,
+rozdílné údaje v dokumentech,
+neobvyklou geografickou vazbu,
+překryv s dřívější škodou.
+
+Kooperativa veřejně uvádí využití technologie pro kontrolu pravosti a správnosti dokládaných dokumentů, proto připrav rozhraní pro integraci podobného nástroje.
+
+Zobraz:
+
+celkové fraud skóre,
+jednotlivé indikátory,
+jejich vysvětlení,
+zdroj informace,
+míru jistoty,
+vztahový graf,
+podobné případy,
+historii prověřování,
+rozhodnutí vyšetřovatele.
+
+AI nebo pravidlový systém nesmí samostatně zamítnout nárok. Výsledek musí sloužit pouze jako podklad pro člověka.
+
+Fraud informace nikdy nezobrazuj klientovi ani běžnému externímu partnerovi.
+
+17. Komunikace
+
+Vytvoř jednotnou komunikační historii:
+
+e-mail,
+SMS,
+klientský portál,
+dopis,
+telefon,
+osobní jednání,
+datová schránka,
+komunikace s partnerem,
+automatická systémová zpráva.
+
+Každý záznam musí obsahovat datum, účastníky, kanál, autora, předmět, přílohy a vazbu na úkol.
+
+Vytvoř šablony:
+
+potvrzení o přijetí škody,
+přidělení čísla události,
+žádost o dokument,
+připomenutí,
+informace o prohlídce,
+informace o prodloužení šetření,
+rozhodnutí o plnění,
+částečné plnění,
+zamítnutí s odůvodněním,
+informace o platbě,
+uzavření případu.
+
+Texty musí být profesionální, lidské a srozumitelné. Nepoužívej interní pojišťovací terminologii bez vysvětlení.
+
+18. Klientský portál
+
+Vedle interní aplikace vytvoř zjednodušený klientský pohled.
+
+Klient uvidí pouze:
+
+číslo události,
+srozumitelný stav,
+časovou osu,
+co se právě děje,
+kdo případ řeší nebo jak kontaktovat pojišťovnu,
+chybějící dokumenty,
+možnost doplnit dokument,
+zprávy,
+plánovanou prohlídku,
+informace o servisu nebo partnerovi,
+informace o rozhodnutí,
+informace o platbě.
+
+Klient nikdy neuvidí:
+
+interní poznámky,
+fraud skóre,
+interní právní rozbory,
+interní rezervu,
+údaje jiných osob,
+pracovní hodnocení zaměstnanců,
+systémové auditní logy.
+
+Připrav integraci s klientskou zónou a silným ověřením identity. V prototypu použij pouze mock přihlášení.
+
+19. Partneři a terénní prohlídky
+
+Vytvoř registr:
+
+smluvních autoservisů,
+autopůjčoven,
+sanačních firem,
+techniků,
+znalců,
+lékařů,
+právníků,
+asistenčních služeb,
+dodavatelů,
+detektivních a vyšetřovacích služeb.
+
+U partnera eviduj:
+
+specializaci,
+region,
+dostupnost,
+kontakty,
+smlouvu,
+sazby,
+SLA,
+hodnocení kvality,
+počet aktivních zakázek,
+průměrnou dobu vyřízení,
+reklamace,
+oprávnění a certifikace.
+
+Mobilní pohled technika musí umožnit:
+
+zobrazit přidělené prohlídky,
+navigovat na místo,
+pracovat v omezeném offline režimu,
+fotografovat,
+označit poškození,
+zadat rozměry,
+pořídit podpis,
+vytvořit protokol,
+odeslat kalkulaci,
+synchronizovat data po obnovení připojení.
+20. Katastrofické události
+
+Vytvoř modul pro povodně, vichřice, krupobití, požáry a další hromadné události.
+
+Umožni:
+
+založit katastrofickou událost,
+definovat čas a geografickou oblast,
+propojit velké množství škod,
+hromadně přidělovat případy,
+upravit prioritizační pravidla,
+zobrazit mapu,
+sledovat kapacitu techniků a partnerů,
+automatizovat jednoduché případy,
+porovnat rezervy a skutečné náklady,
+připravit krizový dashboard,
+hromadně komunikovat s klienty.
+21. Reporting a kontrola kvality
+
+Vytvoř reporty pro management:
+
+počet oznámených škod,
+počet uzavřených škod,
+průměrná doba zpracování,
+medián doby zpracování,
+počet překročených lhůt,
+průměrná výše škody,
+vývoj rezerv,
+vyplacené plnění,
+počet znovu otevřených případů,
+počet stížností,
+automaticky zpracované případy,
+úspora automatizací,
+kvalita partnerů,
+výkonnost týmů,
+výsledky kontrol,
+podezřelé a potvrzené podvody,
+získané regresy,
+katastrofické škody.
+
+Vytvoř kontrolní vzorek případů pro audit kvality. Kontrolní formulář musí hodnotit úplnost dokumentace, správnost krytí, výpočet, komunikaci, dodržení lhůt a auditní stopu.
+
+Nepoužívej počet uzavřených případů jako jediný ukazatel výkonu zaměstnance. Zohledni složitost, kvalitu a spokojenost klienta.
+
+22. Umělá inteligence a automatizace
+
+Implementuj AI asistenta jako pomocnou funkci, nikoliv jako samostatného rozhodovatele.
+
+AI může:
+
+shrnout dlouhý spis,
+vytvořit chronologii,
+rozpoznat typ dokumentu,
+extrahovat údaje,
+navrhnout chybějící dokumenty,
+upozornit na nesrovnalosti,
+navrhnout další krok,
+připravit návrh klientské zprávy,
+vyhledat relevantní pojistnou podmínku,
+navrhnout počáteční rezervu,
+porovnat kalkulaci s obvyklými hodnotami,
+identifikovat podobné případy.
+
+Každý AI výstup musí být označen jako návrh. Zobraz zdroj, míru jistoty a tlačítka:
+
+Přijmout
+Upravit
+Odmítnout
+Nahlásit chybu
+
+AI nesmí:
+
+sama schválit platbu,
+sama zamítnout nárok,
+sama označit osobu za podvodníka,
+měnit originální dokumenty,
+zobrazovat data z jiných případů bez oprávnění,
+používat produkční klientská data k veřejnému trénování modelu.
+23. Bezpečnost, ochrana dat a provozní odolnost
+
+Navrhni systém podle principů security by design a privacy by design.
+
+Vyžaduj:
+
+SSO a vícefaktorové ověření,
+řízení přístupu podle role a atributů,
+nejnižší nutná oprávnění,
+šifrování při přenosu i uložení,
+oddělení produkčního a testovacího prostředí,
+maskování dat,
+bezpečnou správu tajných klíčů,
+ochranu proti běžným webovým útokům,
+kontrolu souborů,
+ochranu API,
+omezení frekvence požadavků,
+session timeout,
+revokaci přístupu,
+audit exportů a tisků,
+zálohování,
+obnovu po havárii,
+monitoring,
+detekci incidentů,
+řízení zranitelností,
+testování obnovy,
+kontrolu externích dodavatelů.
+
+Auditní log musí zaznamenat:
+
+přihlášení,
+neúspěšné přihlášení,
+zobrazení citlivého případu,
+změnu údajů,
+stažení dokumentu,
+export,
+tisk,
+změnu rezervy,
+rozhodnutí o krytí,
+vytvoření a schválení platby,
+změnu oprávnění,
+mimořádný přístup,
+použití AI návrhu.
+
+Do logů neukládej hesla, přístupové tokeny, celé bankovní účty ani zbytečný obsah zdravotních dokumentů.
+
+Systém musí respektovat GDPR, zejména minimalizaci údajů a ochranu dat již v návrhu. Pro pojišťovny je relevantní také evropské nařízení DORA zaměřené na řízení ICT rizik, reakci na narušení a provozní odolnost. Technické bezpečnostní požadavky ověřuj například podle OWASP ASVS.
+
+24. Přístupnost a responzivita
+
+Dodržuj WCAG 2.2 na úrovni AA.
+
+Zajisti:
+
+dostatečný kontrast,
+ovládání klávesnicí,
+viditelný focus,
+správné HTML nadpisy,
+popisky formulářů,
+alternativní texty,
+přístupné chybové hlášky,
+velké klikací plochy,
+podporu zvětšení textu,
+správné tab pořadí,
+oznámení změn pro čtečky obrazovky,
+možnost přeskočit navigaci,
+zákaz předávání významu pouze barvou.
+
+Interní aplikace je primárně desktopová, ale musí dobře fungovat na tabletu. Klientský portál a technické prohlídky musí být plně použitelné na mobilu.
+
+25. Technická architektura
+
+Použij moderní stabilní technologický stack. Preferuj React a TypeScript nebo technologicky rovnocenné řešení. V prostředí, které to podporuje, použij:
+
+Next.js nebo obdobný framework,
+TypeScript,
+přístupnou komponentovou knihovnu,
+utility CSS nebo design systém,
+PostgreSQL,
+ORM,
+objektové úložiště dokumentů,
+fulltextové vyhledávání,
+background jobs,
+auditní event store,
+API vrstvu,
+automatické testy.
+
+Pro prototyp vytvoř modulární architekturu a mock integrační adaptéry pro:
+
+systém pojistných smluv,
+klientský systém,
+dokumentový systém,
+účetnictví,
+platební systém,
+identitu a SSO,
+e-mail a SMS,
+datové schránky,
+mapové služby,
+databáze vozidel,
+autoservisy,
+sanační firmy,
+asistenční služby,
+nástroj kontroly dokumentů,
+analytický sklad,
+regulatorní reporting.
+
+Neoznačuj žádnou neveřejnou integraci jako skutečně existující. Pokud použiješ název interního systému, označ ho jako konfigurovatelný placeholder, dokud nebude potvrzen vlastníkem projektu.
+
+Kooperativa ve zprávě za rok 2025 uvádí investice do digitalizace, automatizace likvidace, analytiky a vývoje core informačního systému NEURON. Nenaznačuj však bez potvrzení, že NEURON je přímo současným likvidačním systémem; připrav pouze obecné integrační rozhraní na core systém.
+
+26. Základní datový model
+
+Vytvoř entity:
+
+User
+Role
+Permission
+Team
+Claim
+ClaimStatus
+Policy
+PolicySnapshot
+Coverage
+Claimant
+Participant
+Organisation
+InsuredObject
+DamageItem
+Injury
+Document
+DocumentVersion
+Task
+Workflow
+Communication
+Inspection
+ExpertReport
+Reserve
+Payment
+PaymentApproval
+Recovery
+FraudIndicator
+Investigation
+LegalCase
+Complaint
+Partner
+PartnerAssignment
+CatastropheEvent
+AuditEvent
+AIRecommendation
+FileAccessRequest
+QualityReview
+
+Přidej logické vazby, historii změn, timestamps, autora změny a soft delete tam, kde je vhodný. Finanční, auditní a rozhodovací záznamy nesmí být běžně přepisovány bez historie.
+
+27. Ukázková data
+
+Vytvoř nejméně 25 realistických syntetických případů.
+
+Zahrň například:
+
+Dopravní nehoda se dvěma vozidly.
+Poškozené čelní sklo.
+Totální škoda na vozidle.
+Poškození vozidla krupobitím.
+Vytopený byt.
+Požár rodinného domu.
+Krádež elektroniky.
+Poškození střechy vichřicí.
+Odpovědnost za škodu způsobenou dítětem.
+Odpovědnost majitele psa.
+Pracovní úraz.
+Dlouhodobá renta.
+Zlomenina a pracovní neschopnost.
+Trvalé následky úrazu.
+Hospitalizace.
+Závažné onemocnění.
+Léčebné výlohy v zahraničí.
+Ztracená zavazadla.
+Storno zájezdu.
+Škoda podnikatele na zásobách.
+Přerušení provozu.
+Průmyslová škoda vyžadující znalce.
+Podezřelá faktura.
+Případ s chybějící dokumentací.
+Případ, který se blíží zákonné lhůtě.
+
+Každý případ musí mít jiné datum, stav, částky, účastníky, úkoly, dokumenty, komunikaci a historii. Používej jasně smyšlená jména a bezpečné testovací údaje.
+
+28. Interakce a funkčnost prototypu
+
+Prototyp nesmí být pouze statický.
+
+Musí fungovat:
+
+přihlášení,
+přepínání rolí,
+navigace,
+vyhledávání,
+filtry,
+tabulky,
+uložené pohledy,
+vytvoření nové události,
+uložení konceptu,
+otevření detailu,
+změna stavu,
+vytvoření úkolu,
+nahrání dokumentu,
+žádost o dokument,
+přidání poznámky,
+vytvoření rezervy,
+návrh platby,
+schválení platby,
+přiřazení partnera,
+vytvoření prohlídky,
+zobrazení klientského portálu,
+zobrazení auditní historie,
+demo AI návrhu,
+export souhrnu případu.
+
+Přidej loading, empty, success, warning a error stavy. Formuláře musí mít validaci a srozumitelná česká chybová hlášení.
+
+29. Kritéria hotového řešení
+
+Výsledek je považován za hotový, pouze pokud:
+
+Vizuálně jednoznačně odpovídá značce Kooperativa.
+Logo není deformované ani nesprávně použité.
+Obsahuje všechny hlavní obrazovky.
+Detail události je skutečně propracovaný.
+Existují odlišné procesy podle typu pojištění.
+Tabulky, filtry a hledání fungují.
+Obsahuje realistickou správu dokumentů.
+Obsahuje workflow, úkoly a sledování lhůt.
+Obsahuje rezervy, platby a jejich schvalování.
+Obsahuje fraud modul s lidským rozhodováním.
+Obsahuje partner portal nebo omezený pohled partnera.
+Obsahuje klientský pohled.
+Obsahuje auditní historii.
+Respektuje přístupová práva.
+Je responzivní a přístupný.
+Neobsahuje lorem ipsum.
+Neobsahuje skutečné osobní údaje.
+Nezaměňuje prototyp za skutečný produkční systém Kooperativy.
+Má čistý, odborný a důvěryhodný vzhled.
+Je připravený k dalšímu rozvoji a integracím.
+30. Zakázané postupy
+
+Nevytvářej generické zelené CRM bez specifických funkcí likvidace.
+
+Nevytvářej jednu obrazovku s několika kartami a grafy a nepovažuj ji za kompletní systém.
+
+Neupravuj logo Kooperativy.
+
+Nevkládej text do loga.
+
+Nepoužívej neoficiální napodobeninu fontu.
+
+Nevytvářej automatické zamítání škod pomocí AI.
+
+Nezobrazuj interní poznámky klientovi.
+
+Nedovol jednomu uživateli vytvořit i schválit vysokou platbu.
+
+Neukládej zdravotní nebo jiné citlivé údaje do běžných logů.
+
+Nepoužívej pouze barvy pro vyjádření stavu.
+
+Nevytvářej zbytečně komplikované animace.
+
+Nevytvářej falešná tvrzení o skutečných interních technologiích Kooperativy.
+
+Nepoužívej skutečná data klientů.
+
+31. Finální výstup
+
+Na konci dodej:
+
+funkční aplikaci,
+kompletní zdrojový kód,
+design tokeny,
+přehled komponent,
+databázové schéma,
+ukázková data,
+dokumentaci rolí a oprávnění,
+přehled workflow,
+seznam integrací,
+bezpečnostní checklist,
+návod ke spuštění,
+demo přihlašovací údaje,
+stručný popis rozhodnutí v oblasti UX,
+seznam částí, které jsou pouze mockované,
+doporučení pro další vývoj produkční verze.
+
+Prioritou není množství efektů, ale rychlost práce, orientace v případu, správné rozhodování, důvěryhodnost, lidská komunikace a úplná auditovatelnost.
